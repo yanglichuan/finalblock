@@ -1,0 +1,207 @@
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/top"
+        android:background="@color/background_to"
+        app:layout_heightPercent="70%h"
+        app:layout_widthPercent="100%w">
+
+        <View
+            android:id="@+id/statusbar_sp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></View>
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusbar_sp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/dayblock"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/goback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                ripple:rv_alpha="127"
+                ripple:rv_color="@color/bg_gray"
+                ripple:rv_rippleDuration="150"
+                ripple:rv_type="doubleRipple"
+                ripple:rv_zoom="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ad_left" />
+            </com.andexert.library.RippleView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:layout_heightPercent="70%w"
+            app:layout_widthPercent="70%w">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ad_ring" />
+
+            <com.ad.block.osaadblock.circleprogress.CircleProgressView
+                android:id="@+id/circleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                CircleProgressView:cpv_barColor="#e5ffffff"
+                CircleProgressView:cpv_barWidth="30dp"
+                CircleProgressView:cpv_contourSize="0dp"
+                CircleProgressView:cpv_contourColor="#aaa"
+                CircleProgressView:cpv_autoTextSize="false"
+                CircleProgressView:cpv_textSize="60sp"
+                CircleProgressView:cpv_unitSize="30sp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_rimColor="#00000000"
+                CircleProgressView:cpv_rimWidth="30dp"
+                CircleProgressView:cpv_seekMode="false"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_textColor="#fff"
+                CircleProgressView:cpv_unitColor="#fff"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/text_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="@string/daytip" />
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_below="@+id/top"
+        app:layout_heightPercent="40%h"
+        app:layout_widthPercent="100%w">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/item1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_select"
+                android:visibility="invisible"
+                ripple:rv_alpha="127"
+                ripple:rv_color="@color/bg_gray"
+                ripple:rv_rippleDuration="150"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dayblock"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="35sp" />
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+
+            <com.andexert.library.RippleView
+                android:id="@+id/item2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_select"
+                android:visibility="invisible"
+                ripple:rv_alpha="127"
+                ripple:rv_color="@color/bg_gray"
+                ripple:rv_rippleDuration="150"
+                ripple:rv_type="rectangle"
+                ripple:rv_zoom="true">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_item1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/monthblock" />
+
+                    <TextView
+                        android:id="@+id/tv_num2"
+                        style="@style/text_item2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0" />
+                </LinearLayout>
+
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/linecolor"></View>
+
+    </RelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

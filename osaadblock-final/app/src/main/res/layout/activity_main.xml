@@ -1,0 +1,313 @@
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/top_color"
+        android:background="#f58220"
+        app:layout_heightPercent="60%h"
+        app:layout_widthPercent="100%w">
+
+        <View
+            android:id="@+id/statusbar_sp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></View>
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusbar_sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <com.andexert.library.RippleView
+                android:id="@+id/setting"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                ripple:rv_color="@color/bg_gray"
+                ripple:rv_rippleDuration="150"
+                ripple:rv_alpha="127"
+                ripple:rv_zoom="true"
+                ripple:rv_type="doubleRipple">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ad_setting" />
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:id="@+id/anim_view"
+            android:layout_height="0dp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:layout_heightPercent="70%w"
+            app:layout_widthPercent="70%w">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ad_noopen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="22dp"
+                android:background="@drawable/ad_noopen_line" />
+
+            <TextView
+                android:id="@+id/ratateLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/ad_opening_line" />
+
+            <TextView
+                android:id="@+id/opened_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/ad_opened" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                app:layout_widthPercent="65%w"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tip_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPEN"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textsize_top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tip_bottom"
+                    android:layout_height="wrap_content"
+                    android:text="00000000"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/textsize_bottom" />
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        <TextView
+            android:id="@+id/scan_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_below="@+id/top_color"
+        android:background="#fff"
+        app:layout_heightPercent="40%h"
+        app:layout_widthPercent="100%w">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/item1_ft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_color="@color/bg_gray"
+                    ripple:rv_rippleDuration="150"
+                    ripple:rv_alpha="127"
+                    ripple:rv_zoom="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ad_block" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AdBlocks" />
+                    </LinearLayout>
+                    <!--</RelativeLayout>-->
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/item2_ft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ripple:rv_color="@color/bg_gray"
+                    ripple:rv_rippleDuration="150"
+                    ripple:rv_alpha="127"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_zoom="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ad_acce" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="@string/MobileAccelerate" />
+                    </LinearLayout>
+                    <!--</RelativeLayout>-->
+                </com.andexert.library.RippleView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/item3_ft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ripple:rv_color="@color/bg_gray"
+                    ripple:rv_rippleDuration="150"
+                    ripple:rv_alpha="127"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_zoom="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ad_flow" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/SaveFlow" />
+                    </LinearLayout>
+                    <!--</RelativeLayout>-->
+
+                </com.andexert.library.RippleView>
+
+
+                <!--  android:background="@drawable/selector_row"-->
+                <com.andexert.library.RippleView
+                    android:id="@+id/item4_ft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ripple:rv_color="@color/bg_gray"
+                    ripple:rv_rippleDuration="150"
+                    ripple:rv_alpha="127"
+                    ripple:rv_type="rectangle"
+                    ripple:rv_zoom="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ad_battery" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="@string/SavePower" />
+                    </LinearLayout>
+                    <!--</RelativeLayout>-->
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:background="@color/linecolor"></View>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/linecolor"></View>
+    </RelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

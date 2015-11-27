@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ad.block.osaadblock">
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Designmain">
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".SaveAdsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".SaveBatteryActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".SaveFlowActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".SaveAccActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".FaqActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"></activity>
+
+
+        <service android:name=".service.BlockService">
+            <intent-filter>
+                <action android:name="com.ad.block.osaadblock.service.BlockService"></action>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".receiver.NetChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="RestartSerivcesForSystemEventReceiver" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <!--umeng 相关的-->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <meta-data android:value="5631ac45e0f55a778a002abc" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="adblock" android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>

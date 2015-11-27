@@ -1,0 +1,90 @@
+﻿<resources>
+    <string name="blockAD">Reklam Engelleme</string>
+    <string name="open">Başlat</string>
+    <string name="close">关闭</string>
+    <string name="opening">Başlatılıyor</string>
+    <string name="closeing">Kapatılıyor</string>
+    <string name="dayblock">Bugün Engellenen</string>
+    <string name="monthblock">Bu Ay Engellenen</string>
+    <string name="daytip">Bugün %%%1$d reklam engellendi.</string>
+    <string name="monthtip">Toplamda %%%1$d reklam engellendi.</string>
+    <string name="daybattery">Bugün Güç Tasarrufu</string>
+    <string name="monthbattery">Batarya Ömrünü Uzat</string>
+    <string name="daytipbattery">Bataryadan %%%1$d Güç Tasarrufu Sağlandı</string>
+    <string name="monthtipbattery">Toplamda batarya gücü %%%1$d artırıldı.</string>
+    <string name="dayflow">Bugün Kota Tasarrufu</string>
+    <string name="monthflow">Bu Ay Toplam Tasarruf</string>
+    <string name="daytipflow">Bugün %%%1$d Tasarruf  Sağlandı</string>
+    <string name="monthtipflow">Toplamda kotadan %%%1$d tasarruf edildi.</string>
+    <string name="dayacc">Bugün Artırılan Performans</string>
+    <string name="monthacc">Toplam Hızlandırılma Zamanı</string>
+    <string name="daytipacc">Telefonunuzun Performansıı %%%1$d Artırıld</string>
+    <string name="monthtipacc">Telefonunuzun Performansıı %%%1$d Artırıld</string>
+    <string name="setting">Ayarlar</string>
+    <string name="autogo">Otomatik Başlatmayı Aç</string>
+    <string name="versionupdate">Sürüm Güncellemesi</string>
+    <string name="about">Hakkımızda</string>
+    <string name="quit">Çıkış</string>
+    <string name="versiontip">AEGIS：%1$s</string>
+    <string name="givefive">Lütfen Yorumlarınız İle Destekleyin!</string>
+    <string name="faqtitle">1.Kotadan nasıl tasarruf ederim？</string>
+    <string name="faqcontent">AEGIS programı sıkıştırma teknolojisi kullanarak yazı,resim gibi içerikleri tekrar düzenler ve kotakulanımı minimum düzeye getirir. Bir hafta içerisinde etkisini görebilirsiniz.</string>
+    <string name="faqtitle1">2.Reklamları nasıl engellerim？</string>
+    <string name="faqcontent1">Ana sayfanın ortasına veya \"Başlat\" butonuna tıklayarak VPN\'i etkinleştirin, başka hiçbir işleme gerek kalmadan reklamlar engellenir.</string>
+    <string name="faqtitle2">3.VPN\'i kurduktan sonra internet erişimi güvenli midir？</string>
+    <string name="faqcontent2">Kesinlikle güvenlidir. AEGIS kişisel bilgilerin toplanmasını engelleyerek güvenliğinizi sağlar, gönülrahatlığı ile kullanabilirsiniz.</string>
+    <string name="quit_tip">Programdan çıkılsın mı?</string>
+    <string name="Yes">Evet</string>
+    <string name="Cancel">Hayır</string>
+    <string name="Enter">Girmek</string>
+    <string name="AdBlocks">Reklam Engelleme</string>
+    <string name="MobileAccelerate">Telefon Hızlandırma</string>
+    <string name="SaveFlow">Kota Tasarrufu</string>
+    <string name="SavePower">Güç Tasarrufu</string>
+
+
+
+    <string name="ydtip1">Reklam Engellemesi İle Daha Rahat İnternet Deneyimi</string>
+    <string name="ydtip2">Akıllı Veri Sıkıştırması İle Kota Tasarrufu Sağlayın</string>
+    <string name="ydtip3">Etkili Güç Tasarrufu İle Batarya Ömrünü Uzatın</string>
+    <string name="ydtip4">Telefonu Hızlandırarak Performansını Artırın</string>
+
+
+    <string name="umeng_common_action_info_exist">İndiriliyor</string>
+    <string name="umeng_common_info_interrupt">İndirme işlemi başarısız, lütfen ağı kontrol ettikten sonra tekrar deneyiniz.</string>
+    <string name="umeng_common_action_pause">Durdur</string>
+    <string name="umeng_common_action_continue">Devam Et</string>
+    <string name="umeng_common_action_cancel">İptal Et</string>
+    <string name="umeng_common_download_notification_prefix">İndiriliyor:  </string>
+    <string name="umeng_common_pause_notification_prefix">Durdur: </string>
+    <string name="umeng_common_start_download_notification">Uygulama İndiriliyor</string>
+    <string name="umeng_common_start_patch_notification">Kurulum Paketi Güncelleniyor</string>
+    <string name="umeng_common_network_break_alert">Lütfen ağa bağlandıktan sonra tekrar deneyiniz!</string>
+    <string name="umeng_common_download_failed">İndirme İşlemi Başarısız</string>
+    <string name="umeng_common_download_finish">İndirme işlemi tamamlandı, lütfen kurulum için tıklayınız.</string>
+    <string name="umeng_common_patch_finish">Güncelleme tamamlandı, lütfen kurulum için tıklayınız.</string>
+    <string name="umeng_common_silent_download_finish">Yeni sürüm hazırlandı, lütfen kurulum için tıklayınız.</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="UMBreak_Network">Ağ Bağlı Değil</string>
+    <string name="UMUpdateTitle">Yeni sürüm bulundu</string>
+    <string name="UMNewVersion">Güncel Sürüm：</string>
+    <string name="UMUpdateContent">İçeriği Güncelle</string>
+    <string name="UMUpdateSize">İndirilmesi Yeterlidir</string>
+    <string name="UMTargetSize">Yeni Sürüm Boyutu</string>
+    <string name="UMGprsCondition">（Uyarı：WIFI Kullanılmıyor）</string>
+    <string name="UMUpdateNow">Güncelle</string>
+    <string name="UMAppUpdate">Uygulama Güncellemesi</string>
+    <string name="UMNotNow">Daha sonra</string>
+    <string name="UMIgnore">İhmal Et</string>
+    <string name="UMToast_IsUpdating">Güncelleniyor....</string>
+    <string name="UMDialog_InstallAPK">Güncel sürüm indirildi, kurulum başlasın mı？</string>
+
+
+
+    <string name="tb_munion_tip_download_prefix">İndiriliyor</string>
+    <string name="currentv">güncel sürümü:</string>
+
+    <string name="thisisnew">Geçerli son sürümü</string>
+    <string name="nonet">şebeke yok</string>
+    <string name="timeout">Zaman aşımı</string>
+</resources>

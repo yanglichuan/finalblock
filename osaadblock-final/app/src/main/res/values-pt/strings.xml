@@ -1,0 +1,91 @@
+﻿<resources>
+    <string name="app_name">AEGIS</string>
+    <string name="blockAD">No. de bloqueo</string>
+    <string name="open">Iniciar</string>
+    <string name="close">关闭</string>
+    <string name="opening">Carregando</string>
+    <string name="closeing">Encerrando</string>
+    <string name="dayblock">Hoje bloqueie</string>
+    <string name="monthblock">Neste mês bloqueie cumulativo</string>
+    <string name="daytip">Hoje, %1$d%% dos anúncios foram bloqueado.</string>
+    <string name="monthtip">Neste mês, %1$d%% dos anúncios foram bloqueado.</string>
+    <string name="daybattery">Hoje economize bateria</string>
+    <string name="monthbattery">A bateria durará mais tempo.</string>
+    <string name="daytipbattery">Economize mais de %1$d%% do uso da bateria.</string>
+    <string name="monthtipbattery">Economize mais de %1$d%% do uso da bateria.</string>
+    <string name="dayflow">Hoje economize o tráfego de dados</string>
+    <string name="monthflow">Neste mês economize cumulativo</string>
+    <string name="daytipflow">Hoje poupança de %1$s%% , pode usar com facilidade.</string>
+    <string name="monthtipflow">Neste mês, economize %1$s%% dos dados do seu plano mensal.</string>
+    <string name="dayacc">Hoje melhore o desempenho</string>
+    <string name="monthacc">Aceleração cumulativo</string>
+    <string name="daytipacc">O desempenho do seu telefone tem sido melhorando %1$d%%.</string>
+    <string name="monthtipacc">Neste mês, economize mais de %1$d%% do uso da bateria.</string>
+    <string name="setting">Configurações</string>
+    <string name="autogo">Executar automaticamente na inicialização </string>
+    <string name="versionupdate">Atualização</string>
+    <string name="about">Sobre nós</string>
+    <string name="quit">Sair</string>
+    <string name="versiontip">AEGIS：%1$s</string>
+    <string name="givefive">Avalie com muitas estrelas!</string>
+    <string name="faqtitle">1.Veja como economizar o seu tráfego de dados?</string>
+    <string name="faqcontent">Com a tecnologia de compressão para otimizar seu tráfego de dados e a reajuste dos pedidos de imagens e outros dos dados de tráfego, mais uma semana se iniciando vai ter um efeito muito mais óbvio. </string>
+    <string name="faqtitle1">2.Veja como bloquear os anúncios irritantes?</string>
+    <string name="faqcontent1">Clique no centro da página inicial ou no botão "Iniciar" para autorizar VPN,então pode facilmente bloquear os anúncios. </string>
+    <string name="faqtitle2">3.Depois de configurar uma VPN, as privacidades dos dados pessoais na internet estão seguros?</string>
+    <string name="faqcontent2">Sim, o AEGIS não recolhe e trata a informação pessoal.</string>
+    <string name="quit_tip">Você tem certeza que deseja sair?</string>
+    <string name="Yes">Confirmar</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="Enter">Entrar</string>
+    <string name="AdBlocks">Bloqueio de anúncios irritantes</string>
+    <string name="MobileAccelerate">Aceleração o seu telefone </string>
+    <string name="SaveFlow">Economizar o tráfego de dados</string>
+    <string name="SavePower">Poupar energia</string>
+
+    <string name="ydtip1">Com o bloqueio de anúncios irritantes você tem um acesso fácil à Internet.</string>
+    <string name="ydtip2">Compressão Inteligente, economize o tráfego de dados.</string>
+    <string name="ydtip3">Economize a duração da bateria.</string>
+    <string name="ydtip4">Melhore o desempenho e acelere um telefone.</string>
+
+
+
+    <string name="umeng_common_action_info_exist">Baixando...</string>
+    <string name="umeng_common_info_interrupt">Falha ao baixar. Verifique a sua conexão com a internet. </string>
+    <string name="umeng_common_action_pause">Pausar</string>
+    <string name="umeng_common_action_continue">Continuar</string>
+    <string name="umeng_common_action_cancel">Cancelar</string>
+    <string name="umeng_common_download_notification_prefix">Baixando: </string>
+    <string name="umeng_common_pause_notification_prefix">Em pausa: </string>
+    <string name="umeng_common_start_download_notification">Baixando o aplicativo...</string>
+    <string name="umeng_common_start_patch_notification">Atualizando o pacote instalador</string>
+    <string name="umeng_common_network_break_alert">Por favor,conecte-se à Internet e tente novamente!</string>
+    <string name="umeng_common_download_failed">Falha ao baixar</string>
+    <string name="umeng_common_download_finish">Download concluído, por favor clique para começar a instalação.</string>
+    <string name="umeng_common_patch_finish">Atualização finalizada, por favor clique para começar a instalação.</string>
+    <string name="umeng_common_silent_download_finish">A nova versão está disponível, por favor clique para começar a instalação.</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="UMBreak_Network">Desligado </string>
+    <string name="UMUpdateTitle">Encontre uma versão mais recente</string>
+    <string name="UMNewVersion">A última versão: </string>
+    <string name="UMUpdateContent">Atualizações</string>
+    <string name="UMUpdateSize">Baixar sem instalar:</string>
+    <string name="UMTargetSize">Tamanho :</string>
+    <string name="UMGprsCondition">(Nota: área não-WIFI)</string>
+    <string name="UMUpdateNow">Atualizar agora</string>
+    <string name="UMAppUpdate">Atualização de aplicativos</string>
+    <string name="UMNotNow">Atualizar mais tarde</string>
+    <string name="UMIgnore">Ignorar</string>
+    <string name="UMToast_IsUpdating">Atualizando...</string>
+    <string name="UMDialog_InstallAPK">Já instale a versão mais recente,instale agora? </string>
+
+
+
+
+    <string name="tb_munion_tip_download_prefix">Baixando:</string>
+    <string name="currentv">a versão atual:</string>
+
+    <string name="thisisnew">A versão mais recente atual</string>
+    <string name="nonet">Sem rede</string>
+    <string name="timeout">Timeout</string>
+</resources>

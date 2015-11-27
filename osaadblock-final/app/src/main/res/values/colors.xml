@@ -1,0 +1,21 @@
+<resources>
+
+    <!--应用的颜色-->
+    <color name="primary_dark_color">#ff009688</color>
+    <color name="primary_color">#ff009688</color>
+    <color name="secondary_color">#ff37474f</color>
+
+
+
+    <color name="background_from">#ffDE7019</color>
+    <color name="background_to">#ff2872D5</color>
+    <color name="green_flow">#ff2BB321</color>
+
+
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="linecolor">#EDEDED</color>
+
+    <color name="tb_munion_item_force">#e3e3e3</color>
+
+
+</resources>

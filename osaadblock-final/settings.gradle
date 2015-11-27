@@ -1,0 +1,2 @@
+include ':app', ':library_sweetdialog'
+project(':library_sweetdialog').projectDir = new File('library')

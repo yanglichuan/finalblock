@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_to"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/statusbar_sp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/goback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                ripple:rv_alpha="127"
+                ripple:rv_color="@color/bg_gray"
+                ripple:rv_rippleDuration="150"
+                ripple:rv_type="doubleRipple"
+                ripple:rv_zoom="true">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ad_left" />
+            </com.andexert.library.RippleView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/setting"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/auto_setup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="blocksDescendants"
+            android:visibility="invisible"
+           >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ad_auto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="@string/autogo" />
+
+            <com.ad.block.osaadblock.togglebutton.ToggleButton
+                android:id="@+id/togglebt"
+                android:layout_width="54dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"></com.ad.block.osaadblock.togglebutton.ToggleButton>
+        </RelativeLayout>
+
+
+
+        <com.andexert.library.RippleView
+            android:id="@+id/verson_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            ripple:rv_alpha="127"
+            ripple:rv_color="@color/bg_gray"
+            ripple:rv_rippleDuration="150"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ad_update" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:text="@string/versionupdate" />
+
+        </com.andexert.library.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/linecolor"></View>
+
+
+        <com.andexert.library.RippleView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            ripple:rv_alpha="127"
+            ripple:rv_color="@color/bg_gray"
+            ripple:rv_rippleDuration="150"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ad_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv3"
+                android:text="@string/about" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ad_right"
+                android:checked="true" />
+        </com.andexert.library.RippleView>
+
+
+        <com.andexert.library.RippleView
+            android:id="@+id/quit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            ripple:rv_alpha="127"
+            ripple:rv_color="@color/bg_gray"
+            ripple:rv_rippleDuration="150"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ad_quit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv4"
+                android:text="@string/quit" />
+
+        </com.andexert.library.RippleView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

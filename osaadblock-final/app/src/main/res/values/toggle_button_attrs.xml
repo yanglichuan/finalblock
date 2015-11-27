@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToggleButton">
+    	<attr name="tborderWidth" format="dimension">
+    	</attr>
+    	<attr name="toffBorderColor" format="reference|color">
+    	</attr>
+    	<attr name="toffColor" format="reference|color">
+    	</attr>
+    	<attr name="tonColor" format="reference|color">
+    	</attr>
+    	<attr name="tspotColor" format="reference|color">
+    	</attr>
+    	<attr name="tanimate" format="reference|boolean">
+    	</attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">AEGIS</string>
+    <string name="blockAD">Blocke Ad</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="opening">OPENING</string>
+    <string name="closeing">CLOSEING</string>
+
+
+    <string name="dayblock">Blocked Today</string>
+    <string name="monthblock">Blocked Month</string>
+    <string name="daytip">Today Blocked %1$d%%</string>
+    <string name="monthtip">This Month Blocked %1$d%%</string>
+
+    <string name="daybattery">Promote Today</string>
+    <string name="monthbattery">Promote Month</string>
+    <string name="daytipbattery">Today Promote %1$d%%</string>
+    <string name="monthtipbattery">This Month Promote %1$d%%</string>
+
+    <string name="dayflow">Saved Today</string>
+    <string name="monthflow">Saved Month</string>
+    <string name="daytipflow">Today Save %1$s%%</string>
+    <string name="monthtipflow">This Month Save %1$s%%</string>
+
+    <string name="dayacc">SpeedUp Today</string>
+    <string name="monthacc">SpeedUp Month</string>
+    <string name="daytipacc">Today SpeedUp %1$d%%</string>
+    <string name="monthtipacc">This Month SpeedUp %1$d%%</string>
+
+
+
+    <string name="setting">Settings</string>
+    <string name="autogo">Run at Startup</string>
+    <string name="versionupdate">Update</string>
+    <string name="about">About Us</string>
+    <string name="quit">Exit</string>
+    <string name="versiontip">AEGIS：%1$s</string>
+    <string name="givefive">Rate it with many stars!</string>
+    <string name="faqtitle">1.How does AEGIS save my data plan?</string>
+    <string name="faqcontent">AEGIS can utilize compression technology to reduce your mobile data usage in texting, loading pictures, etc. The amount of data used on your phone will be drastically reduced after just one week using AEGIS.</string>
+    <string name="faqtitle1">2.How do I block ads with AEGIS?</string>
+    <string name="faqcontent1">You just need to click on the \"ENABLE\" button located on AEGIS\'s home page, and then it will automatically block all annoying ads using VPN services.</string>
+    <string name="faqtitle2">3.Is my privacy secure when VPN is being used to block ads?</string>
+    <string name="faqcontent2">Yes, It is. AEGIS does not collect and share your personal information.</string>
+
+    <string name="quit_tip">Sure to quit?</string>
+    <string name="Yes">Yes</string>
+    <string name="Cancel">No</string>
+    <string name="Enter">Enter</string>
+    <string name="AdBlocks">Ad Block</string>
+    <string name="MobileAccelerate">Mobile Accelerate</string>
+    <string name="SaveFlow">Save Flow</string>
+    <string name="SavePower">Save Power</string>
+
+
+    <string name="ydtip1">Now You Can Block Annoying Ads on Your Phone</string>
+    <string name="ydtip2">Save Your Mobile Data Plan</string>
+    <string name="ydtip3">Extend the Battery Life of Your Phone</string>
+    <string name="ydtip4">Speed Up Your Phone to Improve Its Performance</string>
+
+
+
+
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_pause_notification_prefix">Pause: </string>
+    <string name="umeng_common_start_download_notification">Download start.</string>
+    <string name="umeng_common_start_patch_notification">Patch start.</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_download_failed">Download Failed! </string>
+    <string name="umeng_common_download_finish">Download finished,click to install it.</string>
+    <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMUpdateTitle">New version found</string>
+    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMUpdateContent">Update Content</string>
+    <string name="UMUpdateSize">Update size: </string>
+    <string name="UMTargetSize">Target size: </string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMIgnore">Ingore this</string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+
+
+    <string name="tb_munion_tip_download_prefix">Now is downloading:</string>
+    <string name="currentv">Current Version:</string>
+
+
+
+    <string name="thisisnew">Current latest version</string>
+    <string name="nonet">No internet</string>
+    <string name="timeout">Time out</string>
+
+
+
+</resources>
